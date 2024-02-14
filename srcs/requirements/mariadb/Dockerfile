@@ -19,6 +19,6 @@ EXPOSE 3306
 
 COPY ./tools/dbscript.sh ./
 RUN chmod +x ./dbscript.sh
-RUN chown root:root ./dbscript.sh
+# RUN chown root:root ./dbscript.sh
 
 ENTRYPOINT ["bash", "./dbscript.sh"]

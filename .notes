@@ -14,3 +14,13 @@
     - Docker are lighter and faster than vm's, you can connect multiple docker together and they are simplier to configure.
 - Pertinence of the directory structure required for this project
 
+To do:
+
+- Fix ssl certificate
+- Read tuto line by line to understand stuff like "procps" in mariadb dockfile
+- Read info about docker network
+- Fix login to mariadb with enter directly
+
+USE inception;
+SHOW TABLES;
+SHOW wp_users;
