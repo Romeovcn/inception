@@ -1,5 +1,4 @@
 #!/bin/bash
-# set -eux
 
 cd /var/www/html/wordpress
 
@@ -26,15 +25,10 @@ wp user create --allow-root \
 
 wp cache flush --allow-root
 
-wp plugin install contact-form-7 --allow-root --activate
-
-wp language core install en_US --allow-root --activate
-
 fi
 
 if [ ! -d /run/php ]; then
 	mkdir /run/php;
 fi
 
-# start the PHP FastCGI Process Manager (FPM) for PHP version 7.4 in the foreground
 exec /usr/sbin/php-fpm7.4 -F -R
