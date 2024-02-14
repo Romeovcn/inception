@@ -7,10 +7,10 @@ all:
 logs:
 	docker logs wordpress
 	docker logs mariadb
-#	docker logs nginx
+	docker logs nginx
 
 clean:
-#	docker container stop nginx
+	docker container stop nginx
 	docker container stop mariadb
 	docker container stop wordpress
 	docker network rm inception

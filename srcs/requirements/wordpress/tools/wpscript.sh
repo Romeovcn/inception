@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eux
+# set -eux
 
 cd /var/www/html/wordpress
 
@@ -29,11 +29,6 @@ wp cache flush --allow-root
 wp plugin install contact-form-7 --allow-root --activate
 
 wp language core install en_US --allow-root --activate
-
-wp theme delete twentynineteen twentytwenty --allow-root
-wp plugin delete hello --allow-root
-
-wp rewrite structure '/%postname%/' --allow-root
 
 fi
 
