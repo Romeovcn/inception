@@ -1,25 +1,27 @@
 - How docker and docker-compose works
-    - Docker Compose: Docker Compose simplifies the process of managing multi-container applications. 
-      You define your application's services, networks, and volumes in a docker-compose.yml file. 
-      This file specifies things like which Docker images to use for each service, 
-      how to configure them, and how they should communicate with each other.
-    - Docker is a platform that allows you to develop, ship, and run applications in containers.
-      Containers are lightweight, standalone, and executable software packages that contain everything 
-      needed to run an application, including code, runtime, system tools, libraries, and settings.
-      Docker provides tools and a platform to manage these containers efficiently.
+  - Docker Compose: Docker Compose simplifies the process of managing multi-container applications.
+    You define your application's services, networks, and volumes in a docker-compose.yml file.
+    This file specifies things like which Docker images to use for each service,
+    how to configure them, and how they should communicate with each other.
+  - Docker is a platform that allows you to develop, ship, and run applications in containers.
+    Containers are lightweight, standalone, and executable software packages that contain everything
+    needed to run an application, including code, runtime, system tools, libraries, and settings.
+    Docker provides tools and a platform to manage these containers efficiently.
 - Diff between docker image used with docker-compose and without
-    - It simplify the use (start, stop, configuration) of multiple containers and the connexion between them. 
-      You can also manage the container volumes.
+  - It simplify the use (start, stop, configuration) of multiple containers and the connexion between them.
+    You can also manage the container volumes.
 - Benefit of using dockers compared to vm's
-    - Docker are lighter and faster than vm's, you can connect multiple docker together and they are simplier to configure.
+  - Docker are lighter and faster than vm's, you can connect multiple docker together and they are simplier to configure.
 - Pertinence of the directory structure required for this project
 
 To do:
 
-- Fix ssl certificate
 - Read tuto line by line to understand stuff like "procps" in mariadb dockfile
 - Read info about docker network
 - Fix login to mariadb with enter directly
+- What is "NGINX with TLSv1.2 or TLSv1.3 only"
+- What is php-fpm | php-fpm
+- DELETE .ENV FROM GITHUB IMPORTANT !!!! SAVE LOCALY
 
 USE inception;
 SHOW TABLES;
